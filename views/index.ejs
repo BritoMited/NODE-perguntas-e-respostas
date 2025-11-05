@@ -17,6 +17,11 @@
     <p>Empresa atual: <%= empresa %> </p>
     <p>Numero de contato: <%= ramal %> </p>
 
+    <% if(msg){ %> <!-- abertura de tag EJS, <%= %> apenas para pegar valor da variavel-->
+       <h3>Isso é uma mensagem de erro!</h3>        
+    <% }else{ %>
+       <h3>Isso é uma mensagem de nao erro!</h3>           
+    <% } %>    
 </body>
 
 </html>

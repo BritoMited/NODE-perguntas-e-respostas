@@ -12,12 +12,15 @@ app.get("/:nome/:language", (req, res) => {
     var nome = req.params.nome
     var language = req.params.language
 
+    var exibirMsg = false 
+
     // passagem de valores e variaveis para a pagina html
     res.render("index", {
         nome: nome,
         language: language,
         empresa: "HNSG",
-        ramal: 6681
+        ramal: 6681,
+        msg : exibirMsg
     })
 
 })
