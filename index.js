@@ -14,13 +14,20 @@ app.get("/:nome/:language", (req, res) => {
 
     var exibirMsg = false 
 
+    var produtos = [ // criação de array
+        {nome: "Doritos", preco: 3.14},
+        {nome: "Coca-cola", preco: 5},
+        {nome: "Leite", preco: 1.14}
+    ]
+
     // passagem de valores e variaveis para a pagina html
     res.render("index", {
         nome: nome,
         language: language,
         empresa: "HNSG",
         ramal: 6681,
-        msg : exibirMsg
+        msg : exibirMsg,
+        produtos: produtos // passagem bem simples da array
     })
 
 })
