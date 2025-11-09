@@ -7,6 +7,9 @@ const app = express()
 // e em extensão ejs
 app.set('view engine', 'ejs')
 
+// dizendo que será usado arquivos estaticos, como arquivos css ou imagens
+app.use(express.static('public')) // selecionando a pasta onde estarão esses arquivos, que por padrão é utilizado na pasta 'public'
+
 app.get("/:nome/:language", (req, res) => {
 
     var nome = req.params.nome
