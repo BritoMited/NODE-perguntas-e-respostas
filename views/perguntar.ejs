@@ -11,11 +11,11 @@
             </div>
             <div class="card-body">
                 <br>
-                <form>
+                <form method="post" action="/salvarpergunta">
                     <label for="">Titulo</label>
-                    <input type="text" placeholder="Titulo" class="form-control">
+                    <input type="text" placeholder="Titulo" class="form-control" name="titulo">
                     <br><label for="">Descricao</label>
-                    <textarea placeholder="Descreva sua pergunta" class="form-control"></textarea>
+                    <textarea placeholder="Descreva sua pergunta" class="form-control" name="descricao"></textarea>
                     <br>
                     <button class="btn btn-dark">Enviar</button>
                 </form>
